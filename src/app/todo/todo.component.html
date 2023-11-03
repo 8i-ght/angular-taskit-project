@@ -1,6 +1,10 @@
 <h1>Todo List</h1>
-<input type="text" placeholder="Add Todo">
-<button>Add</button>
+
+<form [formGroup]="newTodoForm" (ngSubmit)="addTask()">
+    <input type="text" placeholder="Add Todo">
+    <button>Add</button>
+</form>
+
 <p>task 1</p>
 <button>Done</button>
 <button>Remove</button>
